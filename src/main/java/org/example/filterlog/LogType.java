@@ -1,0 +1,102 @@
+package org.example.filterlog;
+
+public enum LogType{
+    log1("track:jobs_campus:navigation_2_click"),
+    log2("track:jobs_campus:job_exposure"),
+    log3("track:jobs_campus:jobdetail_result"),
+    log4("track:jobs_campus:jobdetail_subject_show"),
+    log5("track:jobs_campus:jobdetail_operate_click"),
+    log6("track:jobs_campus:job_result"),
+    log7("track:jobs_campus:filter_click"),
+    log8("track:jobs_campus:filter_result"),
+    log9("track:jobs_campus:search_click"),
+    log10("track:jobs_campus:add_intent_click"),
+    log11("track:jobs_campus:filter_click"),
+    log12("track:jobs_campus:filter_result"),
+    log13("track:jobs_campus:intent_result_click"),
+    log14("track:jobs_campus:subject_exposure"),
+    log15("track:jobs_campus:subject_click"),
+    log16("track:jobs_campus:company_exposure"),
+    log17("track:jobs_campus:company_click"),
+    log18("track:jobs_campus:message_operate_click"),
+    log19("track:jobs_campus:message_send_click"),
+    log20("track:jobs_campus:message_change"),
+    log21("track:jobs_campus:resource_click"),
+    log22("track:jobs_campus:campus_talk_click"),
+    log23("track:jobs_campus:job_apply_click"),
+    log24("track:jobs_campus:view_xzlh_show"),
+    log25("track:jobs_campus:quiz_click"),
+    log26("track:jobs_campus:post_ques_click"),
+    log27("track:jobs_campus:reply_click"),
+    log28("track:jobs_campus:post_reply_click"),
+    log29("track:jobs_campus:wiki_click"),
+    log30("track:jobs_campus:add_jobicon_click"),
+    log31("track:jobs_campus:click_result"),
+    log32("track:jobs_campus:upload_resume_click"),
+    log33("track:jobs_campus:resume_unzip_result"),
+    log34("track:jobs_campus:save_resume_click"),
+    log35("track:jobs_campus:mine_show"),
+    log36("track:jobs_campus:mine_click"),
+    log37("track:jobs_campus:get_code_result"),
+    log38("track:jobs_campus:login_regist_result"),
+    log39("track:jobs_campus:online_job_click"),
+    log40("track:jobs_campus:online_submit_result"),
+    log41("track_signup:jobs_campus:$SignUp"),
+    log42("track:default:navigation_1_click"),
+    log43("track:default:navigation_2_click"),
+    log44("track:default:job_exposure"),
+    log45("track:default:jobdetail_result"),
+    log46("track:default:jobdetail_subject_show"),
+    log47("track:default:jobdetail_operate_click"),
+    log48("track:default:job_result"),
+    log49("track:default:filter_click"),
+    log50("track:default:filter_result"),
+    log51("track:default:search_click"),
+    log52("track:default:add_intent_click"),
+    log53("track:default:filter_click"),
+    log54("track:default:filter_result"),
+    log55("track:default:intent_result_click"),
+    log56("track:default:subject_exposure"),
+    log57("track:default:subject_click"),
+    log58("track:default:company_exposure"),
+    log59("track:default:company_click"),
+    log60("track:default:message_operate_click"),
+    log61("track:default:message_send_click"),
+    log62("track:default:message_change"),
+    log63("track:default:resource_click"),
+    log64("track:default:campus_talk_click"),
+    log65("track:default:job_apply_click"),
+    log66("track:default:view_xzlh_show"),
+    log67("track:default:quiz_click"),
+    log68("track:default:post_ques_click"),
+    log69("track:default:reply_click"),
+    log70("track:default:post_reply_click"),
+    log71("track:default:wiki_click"),
+    log72("track:default:add_jobicon_click"),
+    log73("track:default:click_result"),
+    log74("track:default:upload_resume_click"),
+    log75("track:default:resume_unzip_result"),
+    log76("track:default:save_resume_click"),
+    log77("track:default:mine_show"),
+    log78("track:default:mine_click"),
+    log79("track:default:get_code_result"),
+    log80("track:default:login_regist_result"),
+    log81("track:default:online_job_click"),
+    log82("track:default:online_submit_result"),
+    log83("track_signup:default:$SignUp"),
+    log84("track:jobs_campus:navigation_1_click");
+
+    private String logtype;
+    private LogType(String logtype){
+        this.logtype =logtype;
+    }
+
+    @Override
+    public String toString() {
+        return this.logtype;
+    }
+
+    public String getLogtype() {
+        return logtype;
+    }
+}
